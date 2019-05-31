@@ -12,7 +12,7 @@ dir_sample = 'C:/Users/default.DESKTOP-43PHGMT/Desktop/projects/Number Recogniti
 def read_convert(path):
     img = cv2.imread(path,0)
     img = cv2.cvtColor(img,cv2.COLOR_GRAY2RGB)
-    #img = (cv2.bitwise_not(img))
+    #img = (cv2.bitwise_not(img))   #Uncomment if image contains digits in BLACK
     h,w,c = img.shape
     for i in range(h):
         for j in range(w):
